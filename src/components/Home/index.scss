@@ -1,0 +1,46 @@
+.home-page {
+
+    .text-zone {
+        position: absolute;
+        left: 130px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 80%;
+        max-height: 90%;
+
+    }
+    h1 {
+        color: #000;
+        font-size: 33px;
+        margin-bottom: -20px;
+
+        
+        img {
+            width: 80%;
+        }
+    }
+
+    h2 {
+        color: #8d8d8d;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+
+    .flat-button {
+        color: #000;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        text-decoration: none;
+        padding:  10px 18px;
+        border: 1px solid #000;
+        margin-top: 25px;
+        float: left;
+        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap;
+
+        &:hover{
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}
