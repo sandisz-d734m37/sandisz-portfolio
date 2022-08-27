@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import MyName from '../../assets/images/sandisz_t4x.png'
 import './index.scss';
+import Star from './Star';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
                 <h2>Backend Developer | Builder of This Website | Super Fun Guy</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
+            <Star />
         </div>
     )
 }
