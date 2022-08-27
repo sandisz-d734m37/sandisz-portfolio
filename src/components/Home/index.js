@@ -13,7 +13,7 @@ const Home = () => {
                     <br />
                     <img src={MyName} alt="developer" />
                 </h1>
-                <h2>Backend Developer | Builder of This Website | Super Fun Guy</h2>
+                <h2>Backend Developer | Problem Solver | Clothing Designer</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
             <Star />
