@@ -1,8 +1,14 @@
+import postgresql from '../../assets/images/postgresql@4x.png'
+import postman from '../../assets/images/postman@4x.png'
+import rails from '../../assets/images/rails@4x.png'
+import ruby from '../../assets/images/ruby@4x.png'
+import rspec from '../../assets/images/rspec@4x.png'
+import illustrator from '../../assets/images/illustrator@4x.png'
 import './index.scss'
 
 const About = () => {
     return (
-        <div className='container about-page' >
+        <div className='container about-page'>
             <div className='text-zone'>
                 <h1>
                     About me
@@ -16,6 +22,29 @@ const About = () => {
                 <p>
                     Vestibulum nec varius turpis. Cras fermentum arcu id ex maximus, ut tincidunt ante ultrices. Vestibulum sit amet enim nec nunc facilisis porta nec vel nunc. Vestibulum iaculis, mi sed placerat gravida, erat felis faucibus lectus, a tempus sapien justo in ipsum. Nam vestibulum erat ultricies lacus facilisis, in aliquet mi vulputate. Nunc sed metus lectus. Vivamus sit amet risus condimentum, dignissim felis vitae, efficitur dolor. Aenean fermentum ac tortor sed tempor. Quisque aliquam lacinia turpis vel sagittis. Quisque fermentum mi sodales mollis pretium. Praesent ut nibh in urna vehicula elementum eget non nisl. Sed dignissim auctor mauris, in consequat mi tempor ut.
                 </p>
+            </div>
+
+            <div className='stage-cube-cont'>
+                <div className='cubespinner'>
+                    <div className='face1'>
+                        <img src={rspec} alt='RSpec' />
+                    </div>
+                    <div className='face2'>
+                        <img src={rails} alt='Ruby on Rails' />
+                    </div>
+                    <div className='face3'>
+                        <img src={ruby} alt='Ruby' />
+                    </div>
+                    <div className='face4'>
+                        <img src={postgresql} alt='PostgresQL' />
+                    </div>
+                    <div className='face5'>
+                        <img src={postman} alt='PostMan' />
+                    </div>
+                    <div className='face6'>
+                        <img src={illustrator} alt='Adobe Illustrator' />
+                    </div>
+                </div>
             </div>
         </div>
     )
