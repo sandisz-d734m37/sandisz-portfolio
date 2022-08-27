@@ -1,0 +1,41 @@
+.star-container {
+    z-index: 0;
+    width: 1000px;
+    height: 1009px;
+    position: absolute;
+    top: 85%;
+    right: 5%;
+    bottom: 0;
+    left: auto;
+    margin: auto;
+    opacity: 0;
+
+    svg{
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        g {
+            width: 80%;
+            height: 80%;
+        }
+    }
+
+    .solid-star{
+        position: absolute;
+        top: 350px;
+        right: -314px;
+        bottom: auto;
+        left: 0;
+        margin: auto;
+        width: 61.5%;
+        opacity: 0;
+        z-index: 1;
+    }
+}
+
+
+.svg-container {
+    width: 100%;
+    stroke: #000;
+    stroke-width: 1px;
+}
