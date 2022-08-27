@@ -61,11 +61,20 @@
         }
 
         @keyframes head_text {
-            0% {transform:rotateZ(-25deg); right: -1000px; top: -250px}
-            100% {transform:rotateZ(0deg); right: 0px; top: 0px}
+            0% {
+                transform: rotateZ(-25deg);
+                right: -1000px;
+                top: -250px
+            }
+
+            100% {
+                transform: rotateZ(0deg);
+                right: 0px;
+                top: 0px
+            }
         }
 
-        p{
+        p {
             color: #000;
             font-size: 15px;
             position: relative;
@@ -76,7 +85,7 @@
                 animation-duration: 1s;
                 animation-delay: 1s;
             }
-            
+
             &:nth-of-type(2) {
                 animation-duration: 1.3s;
                 animation-delay: 1s;
@@ -89,8 +98,17 @@
         }
 
         @keyframes p_text {
-            0% {transform:rotateZ(45deg); right: -1000px; bottom: -350px}
-            100% {transform:rotateZ(0deg); right: 0px; bottom: 0px}
+            0% {
+                transform: rotateZ(45deg);
+                right: -1000px;
+                bottom: -350px
+            }
+
+            100% {
+                transform: rotateZ(0deg);
+                right: 0px;
+                bottom: 0px
+            }
         }
     }
 }
