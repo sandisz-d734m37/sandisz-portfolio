@@ -36,3 +36,79 @@
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
 }
+
+.about-page {
+    z-index: 0;
+
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 35%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+
+        h1 {
+            font-size: 53px;
+            margin-top: 0;
+            position: relative;
+            opacity: 1;
+            animation-name: head_text;
+            animation-delay: 1s;
+            animation-duration: 1s;
+        }
+
+        @keyframes head_text {
+            0% {
+                transform: rotateZ(-25deg);
+                right: -1000px;
+                top: -250px
+            }
+
+            100% {
+                transform: rotateZ(0deg);
+                right: 0px;
+                top: 0px
+            }
+        }
+
+        p {
+            color: #000;
+            font-size: 15px;
+            position: relative;
+            animation-name: p_text;
+            font-weight: 400;
+
+            &:nth-of-type(1) {
+                animation-duration: 1s;
+                animation-delay: 1s;
+            }
+
+            &:nth-of-type(2) {
+                animation-duration: 1.3s;
+                animation-delay: 1s;
+            }
+
+            &:nth-of-type(3) {
+                animation-duration: 1.4s;
+                animation-delay: 1s;
+            }
+        }
+
+        @keyframes p_text {
+            0% {
+                transform: rotateZ(45deg);
+                right: -1000px;
+                bottom: -350px
+            }
+
+            100% {
+                transform: rotateZ(0deg);
+                right: 0px;
+                bottom: 0px
+            }
+        }
+    }
+}
