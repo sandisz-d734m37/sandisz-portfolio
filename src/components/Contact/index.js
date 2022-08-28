@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import Loader from 'react-loaders'
 import './index.scss'
 import emailjs from '@emailjs/browser'
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 
 const Contact = () => {
 
@@ -61,6 +62,25 @@ const Contact = () => {
                             </ul>
                         </form>
                     </div>
+                </div>
+                <div className='info-map'>
+                    Sandisz Thieme,
+                    <br />
+                    Currently located in:
+                    <br />
+                    Denver, CO
+                    <br />
+                    <span>sandiszthieme@gmail.com</span>
+                </div>
+                <div className='map-wrap'>
+                    <MapContainer center={[39.7393, -104.9848]} zoom={13}>
+                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                        <Marker position={[39.7393, -104.9848]}>
+                            <Popup>
+                                Sandisz lives here, come over for a cup of coffee!
+                            </Popup>
+                        </Marker>
+                    </MapContainer>
                 </div>
             </div>
 
